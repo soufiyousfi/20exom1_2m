@@ -505,7 +505,7 @@
     <header>
         <div class="school-title">متوسطة العربي بن مهيدي — الأستاذ: يوسفي السوفي</div>
         <h1>سلسلة 20 تمرينا تفاعليا في الرياضيات</h1>
-        <div class="sub-info">المستوى: السنة الثانية متوسط (2م) | المقطع الأول: العمليات على الأعداد الطبيعية والأعداد العشرية</div>
+        <div class="sub-info">المستوى: السنة الثانية متوسط (2م) | المقطع الأول: الأعداد والحساب (حسب المخطط السنوي 2022)</div>
     </header>
 
     <div class="sticky-bar">
@@ -544,7 +544,7 @@
         const questionEarned = {};
         const questionLocked = {};
 
-        const symbols1AM = ["+", "−", "×", "÷", ",", "(", ")", "=", "⌫"];
+        const symbols1AM = ["+", "−", "×", "÷", ",", "/", "(", ")", "⌫"];
 
         function playTone(type) {
             if (!soundEnabled) return;
@@ -584,7 +584,7 @@
  {
   "id": 1,
   "pts": 1,
-  "title": "التمرين 01: أولوية الضرب (المورد 1: سلسلة عمليات بدون أقواس)",
+  "title": "التمرين 01: أولوية الضرب (المورد 1: سلسلة عمليات مع احترام الأولويات والأقواس)",
   "context": "احسب مع احترام أولوية العمليات.",
   "questions": [
    {
@@ -656,7 +656,7 @@
  {
   "id": 2,
   "pts": 1,
-  "title": "التمرين 02: القسمة والضرب قبل الجمع والطرح (المورد 1: سلسلة عمليات بدون أقواس)",
+  "title": "التمرين 02: القسمة والضرب قبل الجمع والطرح (المورد 1: سلسلة عمليات مع احترام الأولويات والأقواس)",
   "context": "احسب مع احترام أولوية العمليات.",
   "questions": [
    {
@@ -726,140 +726,7 @@
  {
   "id": 3,
   "pts": 1,
-  "title": "التمرين 03: عمليات من نفس الأولوية (المورد 1: سلسلة عمليات بدون أقواس)",
-  "context": "إذا كانت العمليات من نفس الأولوية نحسب من اليسار إلى اليمين.",
-  "questions": [
-   {
-    "text": "1) <span class=\"math\">E = 60 − 25 + 15</span>",
-    "exact": [
-     "50"
-    ],
-    "partial": [
-     "20"
-    ],
-    "h1": "الجمع والطرح لهما نفس الأولوية.",
-    "h2": "احسب أولا <span class=\"math\">60 − 25</span> ثم أضف <span class=\"math\">15</span>.",
-    "steps": [
-     "<span class=\"math\">E = 60 − 25 + 15</span>",
-     "<span class=\"math\">E = 35 + 15</span>",
-     "<span class=\"math\">E = 50</span>",
-     "النتيجة: <span class=\"math\">E = 50</span>"
-    ],
-    "rubric": [
-     {
-      "step": "<span class=\"math\">60 − 25 = 35</span>",
-      "mark": "0,25"
-     },
-     {
-      "step": "النتيجة <span class=\"math\">50</span>",
-      "mark": "0,25"
-     }
-    ],
-    "pts": 0.5,
-    "partialMsg": "حسبت <span class=\"math\">25 + 15</span> أولا؛ نحسب من اليسار إلى اليمين.",
-    "partialZero": true,
-    "qId": "3-1"
-   },
-   {
-    "text": "2) <span class=\"math\">F = 48 ÷ 4 × 2</span>",
-    "exact": [
-     "24"
-    ],
-    "partial": [
-     "6"
-    ],
-    "h1": "الضرب والقسمة لهما نفس الأولوية.",
-    "h2": "احسب أولا <span class=\"math\">48 ÷ 4</span> ثم اضرب في <span class=\"math\">2</span>.",
-    "steps": [
-     "<span class=\"math\">F = 48 ÷ 4 × 2</span>",
-     "<span class=\"math\">F = 12 × 2</span>",
-     "<span class=\"math\">F = 24</span>",
-     "النتيجة: <span class=\"math\">F = 24</span>"
-    ],
-    "rubric": [
-     {
-      "step": "<span class=\"math\">48 ÷ 4 = 12</span>",
-      "mark": "0,25"
-     },
-     {
-      "step": "النتيجة <span class=\"math\">24</span>",
-      "mark": "0,25"
-     }
-    ],
-    "pts": 0.5,
-    "partialMsg": "حسبت <span class=\"math\">4 × 2</span> أولا؛ نحسب من اليسار إلى اليمين.",
-    "partialZero": true,
-    "qId": "3-2"
-   }
-  ]
- },
- {
-  "id": 4,
-  "pts": 1,
-  "title": "التمرين 04: في المخبزة (المورد 1: سلسلة عمليات بدون أقواس)",
-  "context": "اشترى كريم من مخبزة بالبليدة <span class=\"math\">6</span> خبزات ثمن الواحدة <span class=\"math\">15 DA</span>، و<span class=\"math\">4</span> قطع حلوى ثمن الواحدة <span class=\"math\">35 DA</span>.",
-  "questions": [
-   {
-    "text": "1) ما المبلغ الذي دفعه كريم؟",
-    "exact": [
-     "230"
-    ],
-    "partial": [],
-    "h1": "المبلغ = ثمن الخبز + ثمن الحلوى.",
-    "h2": "اكتب السلسلة <span class=\"math\">6 × 15 + 4 × 35</span> واحسب الجداءين أولا.",
-    "steps": [
-     "<span class=\"math\">6 × 15 + 4 × 35</span>",
-     "<span class=\"math\">= 90 + 140</span>",
-     "<span class=\"math\">= 230</span>",
-     "النتيجة: <span class=\"math\">230 DA</span>"
-    ],
-    "rubric": [
-     {
-      "step": "كتابة السلسلة <span class=\"math\">6 × 15 + 4 × 35</span>",
-      "mark": "0,25"
-     },
-     {
-      "step": "النتيجة <span class=\"math\">230 DA</span>",
-      "mark": "0,25"
-     }
-    ],
-    "pts": 0.5,
-    "qId": "4-1"
-   },
-   {
-    "text": "2) دفع ورقة من فئة <span class=\"math\">500 DA</span>. ما المبلغ الذي يعيده البائع؟",
-    "exact": [
-     "270"
-    ],
-    "partial": [],
-    "h1": "المبلغ المعاد = المبلغ المدفوع − ثمن المشتريات.",
-    "h2": "السلسلة: <span class=\"math\">500 − 6 × 15 − 4 × 35</span>.",
-    "steps": [
-     "<span class=\"math\">500 − 6 × 15 − 4 × 35</span>",
-     "<span class=\"math\">= 500 − 90 − 140</span>",
-     "<span class=\"math\">= 410 − 140</span>",
-     "<span class=\"math\">= 270</span>",
-     "النتيجة: <span class=\"math\">270 DA</span>"
-    ],
-    "rubric": [
-     {
-      "step": "كتابة السلسلة",
-      "mark": "0,25"
-     },
-     {
-      "step": "النتيجة <span class=\"math\">270 DA</span>",
-      "mark": "0,25"
-     }
-    ],
-    "pts": 0.5,
-    "qId": "4-2"
-   }
-  ]
- },
- {
-  "id": 5,
-  "pts": 1,
-  "title": "التمرين 05: الأقواس أولا (المورد 2: سلسلة عمليات بأقواس)",
+  "title": "التمرين 03: الأقواس أولا (المورد 1: سلسلة عمليات مع احترام الأولويات والأقواس)",
   "context": "احسب. نبدأ دائما بما بين الأقواس.",
   "questions": [
    {
@@ -891,7 +758,7 @@
     "pts": 0.5,
     "partialMsg": "لم تبدأ بالأقواس.",
     "partialZero": true,
-    "qId": "5-1"
+    "qId": "3-1"
    },
    {
     "text": "2) <span class=\"math\">H = 90 ÷ (12 − 3)</span>",
@@ -922,146 +789,14 @@
     "pts": 0.5,
     "partialMsg": "لم تبدأ بالأقواس.",
     "partialZero": true,
-    "qId": "5-2"
+    "qId": "3-2"
    }
   ]
  },
  {
-  "id": 6,
+  "id": 4,
   "pts": 1,
-  "title": "التمرين 06: أقواس داخل أقواس (المورد 2: سلسلة عمليات بأقواس)",
-  "context": "عند وجود أقواس داخل أقواس نبدأ بالأقواس الداخلية.",
-  "questions": [
-   {
-    "text": "1) <span class=\"math\">K = 3 × [20 − (4 + 6)]</span>",
-    "exact": [
-     "30"
-    ],
-    "partial": [],
-    "h1": "ابدأ بالقوسين الداخليين <span class=\"math\">(4 + 6)</span>.",
-    "h2": "بعد <span class=\"math\">4 + 6 = 10</span> احسب <span class=\"math\">20 − 10</span> ثم اضرب في <span class=\"math\">3</span>.",
-    "steps": [
-     "<span class=\"math\">K = 3 × [20 − (4 + 6)]</span>",
-     "<span class=\"math\">K = 3 × [20 − 10]</span>",
-     "<span class=\"math\">K = 3 × 10</span>",
-     "<span class=\"math\">K = 30</span>",
-     "النتيجة: <span class=\"math\">K = 30</span>"
-    ],
-    "rubric": [
-     {
-      "step": "<span class=\"math\">4 + 6 = 10</span>",
-      "mark": "0,25"
-     },
-     {
-      "step": "<span class=\"math\">20 − 10 = 10</span> ثم النتيجة <span class=\"math\">30</span>",
-      "mark": "0,25"
-     }
-    ],
-    "pts": 0.5,
-    "qId": "6-1"
-   },
-   {
-    "text": "2) <span class=\"math\">L = 100 − [(15 − 7) × 5 + 12]</span>",
-    "exact": [
-     "48"
-    ],
-    "partial": [],
-    "h1": "ابدأ بـ <span class=\"math\">(15 − 7)</span>، ثم أكمل ما بين المعقوفين مع احترام الأولوية.",
-    "h2": "داخل المعقوفين: <span class=\"math\">8 × 5 + 12</span>، الضرب قبل الجمع.",
-    "steps": [
-     "<span class=\"math\">L = 100 − [(15 − 7) × 5 + 12]</span>",
-     "<span class=\"math\">L = 100 − [8 × 5 + 12]</span>",
-     "<span class=\"math\">L = 100 − [40 + 12]</span>",
-     "<span class=\"math\">L = 100 − 52</span>",
-     "<span class=\"math\">L = 48</span>",
-     "النتيجة: <span class=\"math\">L = 48</span>"
-    ],
-    "rubric": [
-     {
-      "step": "<span class=\"math\">15 − 7 = 8</span> و <span class=\"math\">8 × 5 = 40</span>",
-      "mark": "0,25"
-     },
-     {
-      "step": "<span class=\"math\">40 + 12 = 52</span> ثم النتيجة <span class=\"math\">48</span>",
-      "mark": "0,25"
-     }
-    ],
-    "pts": 0.5,
-    "qId": "6-2"
-   }
-  ]
- },
- {
-  "id": 7,
-  "pts": 1,
-  "title": "التمرين 07: أقواس وأعداد عشرية (المورد 2: سلسلة عمليات بأقواس)",
-  "context": "احسب.",
-  "questions": [
-   {
-    "text": "1) <span class=\"math\">M = (2,5 + 1,5) × (7 − 4,2)</span>",
-    "exact": [
-     "11,2"
-    ],
-    "partial": [],
-    "h1": "احسب ما بين كل قوسين، ثم اضرب الناتجين.",
-    "h2": "<span class=\"math\">2,5 + 1,5 = 4</span>؛ احسب <span class=\"math\">7 − 4,2</span> ثم الجداء.",
-    "steps": [
-     "<span class=\"math\">M = (2,5 + 1,5) × (7 − 4,2)</span>",
-     "<span class=\"math\">M = 4 × 2,8</span>",
-     "<span class=\"math\">M = 11,2</span>",
-     "النتيجة: <span class=\"math\">M = 11,2</span>"
-    ],
-    "rubric": [
-     {
-      "step": "<span class=\"math\">4</span> و <span class=\"math\">2,8</span>",
-      "mark": "0,25"
-     },
-     {
-      "step": "النتيجة <span class=\"math\">11,2</span>",
-      "mark": "0,25"
-     }
-    ],
-    "pts": 0.5,
-    "qId": "7-1"
-   },
-   {
-    "text": "2) <span class=\"math\">N = (9,6 − 3,6) ÷ 1,5 + 2</span>",
-    "exact": [
-     "6"
-    ],
-    "partial": [
-     "2,4"
-    ],
-    "h1": "الأقواس أولا، ثم القسمة، ثم الجمع.",
-    "h2": "<span class=\"math\">9,6 − 3,6 = 6</span>؛ ثم <span class=\"math\">6 ÷ 1,5</span>.",
-    "steps": [
-     "<span class=\"math\">N = (9,6 − 3,6) ÷ 1,5 + 2</span>",
-     "<span class=\"math\">N = 6 ÷ 1,5 + 2</span>",
-     "<span class=\"math\">N = 4 + 2</span>",
-     "<span class=\"math\">N = 6</span>",
-     "النتيجة: <span class=\"math\">N = 6</span>"
-    ],
-    "rubric": [
-     {
-      "step": "<span class=\"math\">6 ÷ 1,5 = 4</span>",
-      "mark": "0,25"
-     },
-     {
-      "step": "النتيجة <span class=\"math\">6</span>",
-      "mark": "0,25"
-     }
-    ],
-    "pts": 0.5,
-    "partialMsg": "القسمة تُنجز قبل الجمع: لا تحسب <span class=\"math\">1,5 + 2</span> أولا.",
-    "partialZero": true,
-    "qId": "7-2"
-   }
-  ]
- },
- {
-  "id": 8,
-  "pts": 1,
-  "title": "التمرين 08: رحلة مدرسية (المورد 2: سلسلة عمليات بأقواس)",
+  "title": "التمرين 04: رحلة مدرسية (المورد 1: سلسلة عمليات مع احترام الأولويات والأقواس)",
   "context": "نظمت متوسطة بتلمسان رحلة لـ <span class=\"math\">45</span> تلميذا و<span class=\"math\">5</span> أساتذة. ثمن التذكرة للفرد الواحد <span class=\"math\">120 DA</span>.",
   "questions": [
    {
@@ -1093,7 +828,7 @@
     "pts": 0.5,
     "partialMsg": "بدون أقواس يُضرب <span class=\"math\">5</span> وحده في <span class=\"math\">120</span>: ضع <span class=\"math\">45 + 5</span> بين قوسين.",
     "partialZero": true,
-    "qId": "8-1"
+    "qId": "4-1"
    },
    {
     "text": "2) تدفع جمعية أولياء التلاميذ <span class=\"math\">1500 DA</span>، والباقي يُقسم بالتساوي على التلاميذ فقط. كم يدفع كل تلميذ؟",
@@ -1124,6 +859,267 @@
     "pts": 0.5,
     "partialMsg": "القسمة على <span class=\"math\">50</span> تخص الجميع، والمطلوب التلاميذ فقط (<span class=\"math\">45</span>).",
     "partialZero": true,
+    "qId": "4-2"
+   }
+  ]
+ },
+ {
+  "id": 5,
+  "pts": 1,
+  "title": "التمرين 05: التوزيع لتسهيل الحساب الذهني (المورد 2: الخاصية التوزيعية في الاتجاهين)",
+  "context": "احسب ذهنيا باستعمال توزيع الضرب على الجمع.",
+  "questions": [
+   {
+    "text": "1) <span class=\"math\">7 × 102</span> (اكتب <span class=\"math\">102 = 100 + 2</span>)",
+    "exact": [
+     "714"
+    ],
+    "partial": [],
+    "h1": "خاصية التوزيع: <span class=\"math\">k × (a + b) = k × a + k × b</span>.",
+    "h2": "<span class=\"math\">7 × 100 + 7 × 2</span>.",
+    "steps": [
+     "<span class=\"math\">7 × 102 = 7 × (100 + 2)</span>",
+     "<span class=\"math\">= 7 × 100 + 7 × 2</span>",
+     "<span class=\"math\">= 700 + 14</span>",
+     "<span class=\"math\">= 714</span>",
+     "النتيجة: <span class=\"math\">714</span>"
+    ],
+    "rubric": [
+     {
+      "step": "<span class=\"math\">7 × 100 + 7 × 2</span>",
+      "mark": "0,25"
+     },
+     {
+      "step": "النتيجة <span class=\"math\">714</span>",
+      "mark": "0,25"
+     }
+    ],
+    "pts": 0.5,
+    "qId": "5-1"
+   },
+   {
+    "text": "2) <span class=\"math\">25 × 4,4</span> (اكتب <span class=\"math\">4,4 = 4 + 0,4</span>)",
+    "exact": [
+     "110"
+    ],
+    "partial": [],
+    "h1": "خاصية التوزيع: <span class=\"math\">k × (a + b) = k × a + k × b</span>.",
+    "h2": "<span class=\"math\">25 × 4 + 25 × 0,4</span>.",
+    "steps": [
+     "<span class=\"math\">25 × 4,4</span>",
+     "<span class=\"math\">= 25 × (4 + 0,4)</span>",
+     "<span class=\"math\">= 25 × 4 + 25 × 0,4</span>",
+     "<span class=\"math\">= 100 + 10</span>",
+     "<span class=\"math\">= 110</span>",
+     "النتيجة: <span class=\"math\">110</span>"
+    ],
+    "rubric": [
+     {
+      "step": "<span class=\"math\">25 × 4 + 25 × 0,4</span>",
+      "mark": "0,25"
+     },
+     {
+      "step": "النتيجة <span class=\"math\">110</span>",
+      "mark": "0,25"
+     }
+    ],
+    "pts": 0.5,
+    "qId": "5-2"
+   }
+  ]
+ },
+ {
+  "id": 6,
+  "pts": 1,
+  "title": "التمرين 06: العامل المشترك (التوزيع في الاتجاه العكسي) (المورد 2: الخاصية التوزيعية في الاتجاهين)",
+  "context": "احسب بطريقة سهلة باستعمال العامل المشترك: <span class=\"math\">k × a + k × b = k × (a + b)</span>.",
+  "questions": [
+   {
+    "text": "1) <span class=\"math\">8 × 13 + 8 × 7</span>",
+    "exact": [
+     "160"
+    ],
+    "partial": [],
+    "h1": "العامل المشترك هو <span class=\"math\">8</span>.",
+    "h2": "<span class=\"math\">8 × (13 + 7)</span>.",
+    "steps": [
+     "<span class=\"math\">8 × 13 + 8 × 7</span>",
+     "<span class=\"math\">= 8 × (13 + 7)</span>",
+     "<span class=\"math\">= 8 × 20</span>",
+     "<span class=\"math\">= 160</span>",
+     "النتيجة: <span class=\"math\">160</span>"
+    ],
+    "rubric": [
+     {
+      "step": "<span class=\"math\">8 × (13 + 7)</span>",
+      "mark": "0,25"
+     },
+     {
+      "step": "النتيجة <span class=\"math\">160</span>",
+      "mark": "0,25"
+     }
+    ],
+    "pts": 0.5,
+    "qId": "6-1"
+   },
+   {
+    "text": "2) <span class=\"math\">3,7 × 6 + 3,7 × 4</span>",
+    "exact": [
+     "37"
+    ],
+    "partial": [],
+    "h1": "العامل المشترك هو <span class=\"math\">3,7</span>.",
+    "h2": "<span class=\"math\">3,7 × (6 + 4)</span> ثم الضرب في <span class=\"math\">10</span>.",
+    "steps": [
+     "<span class=\"math\">3,7 × 6 + 3,7 × 4</span>",
+     "<span class=\"math\">= 3,7 × (6 + 4)</span>",
+     "<span class=\"math\">= 3,7 × 10</span>",
+     "<span class=\"math\">= 37</span>",
+     "النتيجة: <span class=\"math\">37</span>"
+    ],
+    "rubric": [
+     {
+      "step": "<span class=\"math\">3,7 × (6 + 4)</span>",
+      "mark": "0,25"
+     },
+     {
+      "step": "النتيجة <span class=\"math\">37</span>",
+      "mark": "0,25"
+     }
+    ],
+    "pts": 0.5,
+    "qId": "6-2"
+   }
+  ]
+ },
+ {
+  "id": 7,
+  "pts": 1,
+  "title": "التمرين 07: التوزيع على الطرح ذهنيا (المورد 2: الخاصية التوزيعية في الاتجاهين)",
+  "context": "احسب ذهنيا باستعمال توزيع الضرب على الطرح.",
+  "questions": [
+   {
+    "text": "1) <span class=\"math\">9 × 98</span> (اكتب <span class=\"math\">98 = 100 − 2</span>)",
+    "exact": [
+     "882"
+    ],
+    "partial": [],
+    "h1": "خاصية التوزيع: <span class=\"math\">k × (a − b) = k × a − k × b</span>.",
+    "h2": "<span class=\"math\">9 × 100 − 9 × 2</span>.",
+    "steps": [
+     "<span class=\"math\">9 × 98 = 9 × (100 − 2)</span>",
+     "<span class=\"math\">= 9 × 100 − 9 × 2</span>",
+     "<span class=\"math\">= 900 − 18</span>",
+     "<span class=\"math\">= 882</span>",
+     "النتيجة: <span class=\"math\">882</span>"
+    ],
+    "rubric": [
+     {
+      "step": "<span class=\"math\">9 × 100 − 9 × 2</span>",
+      "mark": "0,25"
+     },
+     {
+      "step": "النتيجة <span class=\"math\">882</span>",
+      "mark": "0,25"
+     }
+    ],
+    "pts": 0.5,
+    "qId": "7-1"
+   },
+   {
+    "text": "2) <span class=\"math\">15 × 19</span> (اكتب <span class=\"math\">19 = 20 − 1</span>)",
+    "exact": [
+     "285"
+    ],
+    "partial": [],
+    "h1": "خاصية التوزيع: <span class=\"math\">k × (a − b) = k × a − k × b</span>.",
+    "h2": "<span class=\"math\">15 × 20 − 15 × 1</span>.",
+    "steps": [
+     "<span class=\"math\">15 × 19 = 15 × (20 − 1)</span>",
+     "<span class=\"math\">= 15 × 20 − 15 × 1</span>",
+     "<span class=\"math\">= 300 − 15</span>",
+     "<span class=\"math\">= 285</span>",
+     "النتيجة: <span class=\"math\">285</span>"
+    ],
+    "rubric": [
+     {
+      "step": "<span class=\"math\">15 × 20 − 15 × 1</span>",
+      "mark": "0,25"
+     },
+     {
+      "step": "النتيجة <span class=\"math\">285</span>",
+      "mark": "0,25"
+     }
+    ],
+    "pts": 0.5,
+    "qId": "7-2"
+   }
+  ]
+ },
+ {
+  "id": 8,
+  "pts": 1,
+  "title": "التمرين 08: تخفيض في متجر رياضي (المورد 2: الخاصية التوزيعية في الاتجاهين)",
+  "context": "في متجر بعنابة ثمن الحذاء الرياضي <span class=\"math\">3200 DA</span>، وعليه تخفيض <span class=\"math\">400 DA</span>. اشترى نادٍ رياضي <span class=\"math\">15</span> حذاء.",
+  "questions": [
+   {
+    "text": "1) ما المبلغ الذي دفعه النادي؟",
+    "exact": [
+     "42000"
+    ],
+    "partial": [
+     "48000"
+    ],
+    "h1": "ثمن الحذاء بعد التخفيض <span class=\"math\">3200 − 400</span>، ثم اضرب في <span class=\"math\">15</span>.",
+    "h2": "السلسلة: <span class=\"math\">15 × (3200 − 400)</span>.",
+    "steps": [
+     "<span class=\"math\">15 × (3200 − 400)</span>",
+     "<span class=\"math\">= 15 × 2800</span>",
+     "<span class=\"math\">= 42000</span>",
+     "أو: <span class=\"math\">15 × 3200 − 15 × 400</span>",
+     "<span class=\"math\">= 48000 − 6000 = 42000</span>",
+     "النتيجة: <span class=\"math\">42000 DA</span>"
+    ],
+    "rubric": [
+     {
+      "step": "كتابة <span class=\"math\">15 × (3200 − 400)</span>",
+      "mark": "0,25"
+     },
+     {
+      "step": "النتيجة <span class=\"math\">42000 DA</span>",
+      "mark": "0,25"
+     }
+    ],
+    "pts": 0.5,
+    "partialMsg": "هذا الثمن دون تخفيض.",
+    "partialZero": true,
+    "qId": "8-1"
+   },
+   {
+    "text": "2) ما قيمة التخفيض الذي استفاد منه النادي في المجموع؟",
+    "exact": [
+     "6000"
+    ],
+    "partial": [],
+    "h1": "التخفيض الكلي = عدد الأحذية × تخفيض الحذاء الواحد.",
+    "h2": "<span class=\"math\">15 × 400</span>.",
+    "steps": [
+     "<span class=\"math\">15 × 400</span>",
+     "<span class=\"math\">= 6000</span>",
+     "نتحقق: <span class=\"math\">48000 − 42000 = 6000</span>",
+     "النتيجة: <span class=\"math\">6000 DA</span>"
+    ],
+    "rubric": [
+     {
+      "step": "<span class=\"math\">15 × 400</span>",
+      "mark": "0,25"
+     },
+     {
+      "step": "النتيجة <span class=\"math\">6000 DA</span>",
+      "mark": "0,25"
+     }
+    ],
+    "pts": 0.5,
     "qId": "8-2"
    }
   ]
@@ -1131,7 +1127,159 @@
  {
   "id": 9,
   "pts": 1,
-  "title": "التمرين 09: حذف علامة الضرب (المورد 3: اصطلاحات الكتابة)",
+  "title": "التمرين 09: مربعات بأعواد الثقاب (المورد 3: عبارة جبرية تترجم وضعية منتظمة)",
+  "context": "نصنع صفا من مربعات متلاصقة بأعواد الثقاب: مربع واحد يحتاج <span class=\"math\">4</span> أعواد، مربعان <span class=\"math\">7</span> أعواد، ثلاثة مربعات <span class=\"math\">10</span> أعواد، وهكذا (كل مربع جديد يضيف <span class=\"math\">3</span> أعواد).",
+  "questions": [
+   {
+    "text": "1) كم عودا نحتاج لصنع <span class=\"math\">5</span> مربعات؟",
+    "exact": [
+     "16"
+    ],
+    "partial": [
+     "20"
+    ],
+    "h1": "كل مربع جديد يضيف <span class=\"math\">3</span> أعواد.",
+    "h2": "من <span class=\"math\">10</span> أعواد (3 مربعات) أضف <span class=\"math\">3</span> ثم <span class=\"math\">3</span>.",
+    "steps": [
+     "<span class=\"math\">3</span> مربعات: <span class=\"math\">10</span> أعواد",
+     "<span class=\"math\">4</span> مربعات: <span class=\"math\">10 + 3</span>",
+     "<span class=\"math\">= 13</span>",
+     "<span class=\"math\">5</span> مربعات: <span class=\"math\">13 + 3</span>",
+     "<span class=\"math\">= 16</span>",
+     "أو: <span class=\"math\">3 × 5 + 1 = 16</span>",
+     "النتيجة: <span class=\"math\">16</span> عودا"
+    ],
+    "rubric": [
+     {
+      "step": "إضافة <span class=\"math\">3</span> أعواد لكل مربع",
+      "mark": "0,25"
+     },
+     {
+      "step": "النتيجة <span class=\"math\">16</span>",
+      "mark": "0,25"
+     }
+    ],
+    "pts": 0.5,
+    "partialMsg": "المربعات متلاصقة: الضلع المشترك لا يُعدّ مرتين.",
+    "partialZero": true,
+    "qId": "9-1"
+   },
+   {
+    "text": "2) اكتب عبارة عدد الأعواد اللازمة لصنع <span class=\"math\">n</span> مربعا.",
+    "exact": [
+     "3n+1",
+     "1+3n",
+     "3×n+1",
+     "1+3×n",
+     "n×3+1"
+    ],
+    "partial": [
+     "4n",
+     "3n",
+     "n+3"
+    ],
+    "h1": "العود الأول، ثم <span class=\"math\">3</span> أعواد لكل مربع.",
+    "h2": "تحقق من عبارتك: من أجل <span class=\"math\">n = 1</span> يجب أن تعطي <span class=\"math\">4</span>، ومن أجل <span class=\"math\">n = 2</span> تعطي <span class=\"math\">7</span>.",
+    "steps": [
+     "عود أول + <span class=\"math\">3</span> أعواد لكل مربع",
+     "عدد الأعواد <span class=\"math\">= 3 × n + 1</span>",
+     "نتحقق: <span class=\"math\">n = 2</span> يعطي <span class=\"math\">3 × 2 + 1 = 7</span>",
+     "النتيجة: <span class=\"math\">3n + 1</span>"
+    ],
+    "rubric": [
+     {
+      "step": "الحد <span class=\"math\">3n</span>",
+      "mark": "0,25"
+     },
+     {
+      "step": "الحد الثابت <span class=\"math\">+ 1</span>",
+      "mark": "0,25"
+     }
+    ],
+    "pts": 0.5,
+    "partialMsg": "جرّب عبارتك من أجل <span class=\"math\">n = 2</span>: يجب أن تعطي <span class=\"math\">7</span>.",
+    "partialZero": true,
+    "qId": "9-2"
+   }
+  ]
+ },
+ {
+  "id": 10,
+  "pts": 1,
+  "title": "التمرين 10: تذاكر الحافلة (المورد 3: عبارة جبرية تترجم وضعية منتظمة)",
+  "context": "ثمن تذكرة الحافلة في مدينة سطيف <span class=\"math\">25 DA</span>. يشتري أحمد <span class=\"math\">n</span> تذكرة.",
+  "questions": [
+   {
+    "text": "1) اكتب عبارة المبلغ الذي يدفعه أحمد بدلالة <span class=\"math\">n</span>.",
+    "exact": [
+     "25n",
+     "25×n",
+     "n×25"
+    ],
+    "partial": [
+     "n25",
+     "25+n"
+    ],
+    "h1": "المبلغ = عدد التذاكر × ثمن التذكرة.",
+    "h2": "استعمل الحرف <span class=\"math\">n</span> مكان عدد التذاكر واحذف علامة <span class=\"math\">×</span>.",
+    "steps": [
+     "المبلغ <span class=\"math\">= 25 × n</span>",
+     "<span class=\"math\">= 25n</span>",
+     "النتيجة: <span class=\"math\">25n</span>"
+    ],
+    "rubric": [
+     {
+      "step": "الجداء <span class=\"math\">25 × n</span>",
+      "mark": "0,25"
+     },
+     {
+      "step": "الكتابة <span class=\"math\">25n</span>",
+      "mark": "0,25"
+     }
+    ],
+    "pts": 0.5,
+    "partialMsg": "المبلغ جداء وليس مجموعا، والعدد يكتب قبل الحرف.",
+    "partialZero": true,
+    "qId": "10-1"
+   },
+   {
+    "text": "2) احسب هذا المبلغ من أجل <span class=\"math\">n = 12</span>.",
+    "exact": [
+     "300"
+    ],
+    "partial": [
+     "2512",
+     "37"
+    ],
+    "h1": "عوض <span class=\"math\">n</span> بـ <span class=\"math\">12</span> في <span class=\"math\">25n</span>.",
+    "h2": "<span class=\"math\">25 × 12</span> = <span class=\"math\">25 × 10 + 25 × 2</span>.",
+    "steps": [
+     "<span class=\"math\">25n = 25 × 12</span>",
+     "<span class=\"math\">= 250 + 50</span>",
+     "<span class=\"math\">= 300</span>",
+     "النتيجة: <span class=\"math\">300 DA</span>"
+    ],
+    "rubric": [
+     {
+      "step": "التعويض <span class=\"math\">25 × 12</span>",
+      "mark": "0,25"
+     },
+     {
+      "step": "النتيجة <span class=\"math\">300 DA</span>",
+      "mark": "0,25"
+     }
+    ],
+    "pts": 0.5,
+    "partialMsg": "<span class=\"math\">25n</span> تعني <span class=\"math\">25 × n</span>.",
+    "partialZero": true,
+    "qId": "10-2"
+   }
+  ]
+ },
+ {
+  "id": 11,
+  "pts": 1,
+  "title": "التمرين 11: حذف علامة الضرب (المورد 4: تحويرات على عبارات جبرية)",
   "context": "اكتب كل جداء دون علامة الضرب.",
   "questions": [
    {
@@ -1157,7 +1305,7 @@
     "pts": 0.5,
     "partialMsg": "العدد يُكتب قبل الحرف.",
     "partialZero": true,
-    "qId": "9-1"
+    "qId": "11-1"
    },
    {
     "text": "2) <span class=\"math\">3 × (x + 2)</span>",
@@ -1182,84 +1330,14 @@
     "pts": 0.5,
     "partialMsg": "لا تحذف القوسين: <span class=\"math\">3x + 2</span> عبارة مختلفة.",
     "partialZero": true,
-    "qId": "9-2"
+    "qId": "11-2"
    }
   ]
  },
  {
-  "id": 10,
+  "id": 12,
   "pts": 1,
-  "title": "التمرين 10: معنى الكتابة المختصرة (المورد 3: اصطلاحات الكتابة)",
-  "context": "الكتابة <span class=\"math\">2a</span> تعني <span class=\"math\">2 × a</span>.",
-  "questions": [
-   {
-    "text": "1) اكتب بأبسط شكل: <span class=\"math\">a × b × 4</span>",
-    "exact": [
-     "4ab",
-     "4ba"
-    ],
-    "partial": [
-     "ab4"
-    ],
-    "h1": "احذف علامات <span class=\"math\">×</span> واكتب العدد في البداية.",
-    "h2": "العدد <span class=\"math\">4</span> أولا، ثم الحرفان.",
-    "steps": [
-     "<span class=\"math\">a × b × 4 = 4 × a × b</span>",
-     "<span class=\"math\">= 4ab</span>",
-     "النتيجة: <span class=\"math\">4ab</span>"
-    ],
-    "rubric": [
-     {
-      "step": "العدد في البداية",
-      "mark": "0,25"
-     },
-     {
-      "step": "النتيجة <span class=\"math\">4ab</span>",
-      "mark": "0,25"
-     }
-    ],
-    "pts": 0.5,
-    "partialMsg": "العدد يُكتب قبل الحروف.",
-    "partialZero": true,
-    "qId": "10-1"
-   },
-   {
-    "text": "2) احسب <span class=\"math\">2a</span> من أجل <span class=\"math\">a = 7</span>.",
-    "exact": [
-     "14"
-    ],
-    "partial": [
-     "27"
-    ],
-    "h1": "<span class=\"math\">2a</span> تعني <span class=\"math\">2 × a</span>.",
-    "h2": "عوض <span class=\"math\">a</span> بـ <span class=\"math\">7</span>: <span class=\"math\">2 × 7</span>.",
-    "steps": [
-     "<span class=\"math\">2a = 2 × a</span>",
-     "<span class=\"math\">2a = 2 × 7</span>",
-     "<span class=\"math\">2a = 14</span>",
-     "النتيجة: <span class=\"math\">14</span>"
-    ],
-    "rubric": [
-     {
-      "step": "التعويض <span class=\"math\">2 × 7</span>",
-      "mark": "0,25"
-     },
-     {
-      "step": "النتيجة <span class=\"math\">14</span>",
-      "mark": "0,25"
-     }
-    ],
-    "pts": 0.5,
-    "partialMsg": "<span class=\"math\">2a</span> ليست العدد <span class=\"math\">27</span>؛ إنها <span class=\"math\">2 × a</span>.",
-    "partialZero": true,
-    "qId": "10-2"
-   }
-  ]
- },
- {
-  "id": 11,
-  "pts": 1,
-  "title": "التمرين 11: حساب قيمة عبارة (المورد 3: اصطلاحات الكتابة)",
+  "title": "التمرين 12: حساب قيمة عبارة (المورد 4: تحويرات على عبارات جبرية)",
   "context": "نعتبر العبارة <span class=\"math\">E = 4x + 3</span>.",
   "questions": [
    {
@@ -1292,7 +1370,7 @@
     "pts": 0.5,
     "partialMsg": "<span class=\"math\">4x</span> تعني <span class=\"math\">4 × x</span> والضرب قبل الجمع.",
     "partialZero": true,
-    "qId": "11-1"
+    "qId": "12-1"
    },
    {
     "text": "2) احسب <span class=\"math\">E</span> من أجل <span class=\"math\">x = 2,5</span>.",
@@ -1319,70 +1397,6 @@
      }
     ],
     "pts": 0.5,
-    "qId": "11-2"
-   }
-  ]
- },
- {
-  "id": 12,
-  "pts": 1,
-  "title": "التمرين 12: التوزيع لتسهيل الحساب الذهني (المورد 4: توزيع الضرب على الجمع)",
-  "context": "احسب ذهنيا باستعمال توزيع الضرب على الجمع.",
-  "questions": [
-   {
-    "text": "1) <span class=\"math\">7 × 102</span> (اكتب <span class=\"math\">102 = 100 + 2</span>)",
-    "exact": [
-     "714"
-    ],
-    "partial": [],
-    "h1": "خاصية التوزيع: <span class=\"math\">k × (a + b) = k × a + k × b</span>.",
-    "h2": "<span class=\"math\">7 × 100 + 7 × 2</span>.",
-    "steps": [
-     "<span class=\"math\">7 × 102 = 7 × (100 + 2)</span>",
-     "<span class=\"math\">= 7 × 100 + 7 × 2</span>",
-     "<span class=\"math\">= 700 + 14</span>",
-     "<span class=\"math\">= 714</span>",
-     "النتيجة: <span class=\"math\">714</span>"
-    ],
-    "rubric": [
-     {
-      "step": "<span class=\"math\">7 × 100 + 7 × 2</span>",
-      "mark": "0,25"
-     },
-     {
-      "step": "النتيجة <span class=\"math\">714</span>",
-      "mark": "0,25"
-     }
-    ],
-    "pts": 0.5,
-    "qId": "12-1"
-   },
-   {
-    "text": "2) <span class=\"math\">25 × 4,4</span> (اكتب <span class=\"math\">4,4 = 4 + 0,4</span>)",
-    "exact": [
-     "110"
-    ],
-    "partial": [],
-    "h1": "خاصية التوزيع: <span class=\"math\">k × (a + b) = k × a + k × b</span>.",
-    "h2": "<span class=\"math\">25 × 4 + 25 × 0,4</span>.",
-    "steps": [
-     "<span class=\"math\">25 × 4,4 = 25 × (4 + 0,4)</span>",
-     "<span class=\"math\">= 25 × 4 + 25 × 0,4</span>",
-     "<span class=\"math\">= 100 + 10</span>",
-     "<span class=\"math\">= 110</span>",
-     "النتيجة: <span class=\"math\">110</span>"
-    ],
-    "rubric": [
-     {
-      "step": "<span class=\"math\">25 × 4 + 25 × 0,4</span>",
-      "mark": "0,25"
-     },
-     {
-      "step": "النتيجة <span class=\"math\">110</span>",
-      "mark": "0,25"
-     }
-    ],
-    "pts": 0.5,
     "qId": "12-2"
    }
   ]
@@ -1390,7 +1404,7 @@
  {
   "id": 13,
   "pts": 1,
-  "title": "التمرين 13: النشر (المورد 4: توزيع الضرب على الجمع)",
+  "title": "التمرين 13: النشر (المورد 4: تحويرات على عبارات جبرية)",
   "context": "انشر كل عبارة (اكتبها دون أقواس).",
   "questions": [
    {
@@ -1438,7 +1452,8 @@
     "h1": "اضرب <span class=\"math\">3</span> في <span class=\"math\">2a</span> ثم في <span class=\"math\">5</span>.",
     "h2": "<span class=\"math\">3 × 2a = 6a</span>.",
     "steps": [
-     "<span class=\"math\">3(2a + 5) = 3 × 2a + 3 × 5</span>",
+     "<span class=\"math\">3(2a + 5)</span>",
+     "<span class=\"math\">= 3 × 2a + 3 × 5</span>",
      "<span class=\"math\">= 6a + 15</span>",
      "النتيجة: <span class=\"math\">6a + 15</span>"
     ],
@@ -1462,57 +1477,62 @@
  {
   "id": 14,
   "pts": 1,
-  "title": "التمرين 14: العامل المشترك (التوزيع في الاتجاه العكسي) (المورد 4: توزيع الضرب على الجمع)",
-  "context": "احسب بطريقة سهلة باستعمال العامل المشترك: <span class=\"math\">k × a + k × b = k × (a + b)</span>.",
+  "title": "التمرين 14: تقدير ثمن المشتريات (المورد 5: التقدير الذهني لنتيجة حساب)",
+  "context": "اشترت سلمى من مكتبة بالبويرة ثلاثة كتب أثمانها: <span class=\"math\">395 DA</span> و<span class=\"math\">612 DA</span> و<span class=\"math\">189 DA</span>.",
   "questions": [
    {
-    "text": "1) <span class=\"math\">8 × 13 + 8 × 7</span>",
+    "text": "1) قدّر ذهنيا ثمن الكتب الثلاثة بتدوير كل ثمن إلى أقرب مئة.",
     "exact": [
-     "160"
+     "1200"
     ],
-    "partial": [],
-    "h1": "العامل المشترك هو <span class=\"math\">8</span>.",
-    "h2": "<span class=\"math\">8 × (13 + 7)</span>.",
+    "partial": [
+     "1196"
+    ],
+    "h1": "أقرب مئة إلى <span class=\"math\">395</span> هي <span class=\"math\">400</span>.",
+    "h2": "<span class=\"math\">612 ≈ 600</span> و<span class=\"math\">189 ≈ 200</span>؛ اجمع القيم المدورة.",
     "steps": [
-     "<span class=\"math\">8 × 13 + 8 × 7 = 8 × (13 + 7)</span>",
-     "<span class=\"math\">= 8 × 20</span>",
-     "<span class=\"math\">= 160</span>",
-     "النتيجة: <span class=\"math\">160</span>"
+     "<span class=\"math\">395 ≈ 400</span>",
+     "<span class=\"math\">612 ≈ 600</span>",
+     "<span class=\"math\">189 ≈ 200</span>",
+     "<span class=\"math\">400 + 600 + 200 = 1200</span>",
+     "النتيجة: <span class=\"math\">1200 DA</span> تقريبا"
     ],
     "rubric": [
      {
-      "step": "<span class=\"math\">8 × (13 + 7)</span>",
+      "step": "تدوير الأثمان الثلاثة",
       "mark": "0,25"
      },
      {
-      "step": "النتيجة <span class=\"math\">160</span>",
+      "step": "التقدير <span class=\"math\">1200 DA</span>",
       "mark": "0,25"
      }
     ],
     "pts": 0.5,
+    "partialMsg": "هذا المجموع المضبوط، والمطلوب تقدير ذهني بالتدوير.",
+    "partialZero": true,
     "qId": "14-1"
    },
    {
-    "text": "2) <span class=\"math\">3,7 × 6 + 3,7 × 4</span>",
+    "text": "2) احسب الثمن المضبوط.",
     "exact": [
-     "37"
+     "1196"
     ],
     "partial": [],
-    "h1": "العامل المشترك هو <span class=\"math\">3,7</span>.",
-    "h2": "<span class=\"math\">3,7 × (6 + 4)</span> ثم الضرب في <span class=\"math\">10</span>.",
+    "h1": "اجمع الأثمان الثلاثة.",
+    "h2": "<span class=\"math\">395 + 612 = 1007</span>.",
     "steps": [
-     "<span class=\"math\">3,7 × 6 + 3,7 × 4 = 3,7 × (6 + 4)</span>",
-     "<span class=\"math\">= 3,7 × 10</span>",
-     "<span class=\"math\">= 37</span>",
-     "النتيجة: <span class=\"math\">37</span>"
+     "<span class=\"math\">395 + 612 = 1007</span>",
+     "<span class=\"math\">1007 + 189 = 1196</span>",
+     "نقارن مع التقدير: <span class=\"math\">1196</span> قريب من <span class=\"math\">1200</span>",
+     "النتيجة: <span class=\"math\">1196 DA</span>"
     ],
     "rubric": [
      {
-      "step": "<span class=\"math\">3,7 × (6 + 4)</span>",
+      "step": "<span class=\"math\">395 + 612 = 1007</span>",
       "mark": "0,25"
      },
      {
-      "step": "النتيجة <span class=\"math\">37</span>",
+      "step": "النتيجة <span class=\"math\">1196 DA</span>",
       "mark": "0,25"
      }
     ],
@@ -1524,161 +1544,219 @@
  {
   "id": 15,
   "pts": 1,
-  "title": "التمرين 15: قطعة أرض فلاحية (المورد 4: توزيع الضرب على الجمع)",
-  "context": "قطعة أرض فلاحية بالمسيلة مستطيلة الشكل عرضها <span class=\"math\">12 m</span>، قُسمت إلى جزأين مستطيلين لهما نفس العرض، طولاهما <span class=\"math\">15 m</span> و<span class=\"math\">25 m</span>.",
+  "title": "التمرين 15: رتبة مقدار جداء (المورد 5: التقدير الذهني لنتيجة حساب)",
+  "context": "قدّر ذهنيا نتيجة كل جداء دون حسابه بدقة.",
   "questions": [
    {
-    "text": "ما المساحة الكلية للقطعة؟ (احسبها بطريقة التوزيع)",
+    "text": "1) <span class=\"math\">49 × 31</span> (دوّر كل عدد إلى أقرب عشرة)",
     "exact": [
-     "480"
+     "1500"
     ],
     "partial": [
-     "52",
-     "104"
+     "1519"
     ],
-    "h1": "المساحة الكلية = مساحة الجزء الأول + مساحة الجزء الثاني، أو العرض × الطول الكلي.",
-    "h2": "<span class=\"math\">12 × 15 + 12 × 25 = 12 × (15 + 25)</span>.",
+    "h1": "أقرب عشرة إلى <span class=\"math\">49</span> هي <span class=\"math\">50</span>.",
+    "h2": "<span class=\"math\">31 ≈ 30</span>؛ احسب <span class=\"math\">50 × 30</span>.",
     "steps": [
-     "مساحة الجزأين: <span class=\"math\">12 × 15 + 12 × 25</span>",
-     "<span class=\"math\">= 12 × (15 + 25)</span>",
-     "<span class=\"math\">= 12 × 40</span>",
-     "<span class=\"math\">= 480</span>",
-     "النتيجة: <span class=\"math\">480 m²</span>"
+     "<span class=\"math\">49 ≈ 50</span>",
+     "<span class=\"math\">31 ≈ 30</span>",
+     "<span class=\"math\">50 × 30 = 1500</span>",
+     "النتيجة: <span class=\"math\">1500</span>"
     ],
     "rubric": [
      {
-      "step": "كتابة <span class=\"math\">12 × 15 + 12 × 25</span>",
+      "step": "التدوير <span class=\"math\">50</span> و<span class=\"math\">30</span>",
       "mark": "0,25"
      },
      {
-      "step": "العامل المشترك <span class=\"math\">12 × (15 + 25)</span>",
-      "mark": "0,25"
-     },
-     {
-      "step": "<span class=\"math\">12 × 40</span>",
-      "mark": "0,25"
-     },
-     {
-      "step": "النتيجة <span class=\"math\">480 m²</span>",
+      "step": "التقدير <span class=\"math\">1500</span>",
       "mark": "0,25"
      }
     ],
-    "pts": 1,
-    "partialMsg": "هذا يخص الأطوال (المحيط)، والمطلوب المساحة.",
+    "pts": 0.5,
+    "partialMsg": "هذه النتيجة المضبوطة، والمطلوب التقدير.",
     "partialZero": true,
     "qId": "15-1"
+   },
+   {
+    "text": "2) <span class=\"math\">7,9 × 20,2</span> (دوّر كل عدد إلى الوحدة)",
+    "exact": [
+     "160"
+    ],
+    "partial": [
+     "159,58",
+     "140"
+    ],
+    "h1": "أقرب عدد طبيعي إلى <span class=\"math\">7,9</span> هو <span class=\"math\">8</span>.",
+    "h2": "<span class=\"math\">20,2 ≈ 20</span>؛ احسب <span class=\"math\">8 × 20</span>.",
+    "steps": [
+     "<span class=\"math\">7,9 ≈ 8</span>",
+     "<span class=\"math\">20,2 ≈ 20</span>",
+     "<span class=\"math\">8 × 20 = 160</span>",
+     "النتيجة: <span class=\"math\">160</span>"
+    ],
+    "rubric": [
+     {
+      "step": "التدوير <span class=\"math\">8</span> و<span class=\"math\">20</span>",
+      "mark": "0,25"
+     },
+     {
+      "step": "التقدير <span class=\"math\">160</span>",
+      "mark": "0,25"
+     }
+    ],
+    "pts": 0.5,
+    "partialMsg": "دوّر <span class=\"math\">7,9</span> إلى <span class=\"math\">8</span> و<span class=\"math\">20,2</span> إلى <span class=\"math\">20</span> ثم اضرب.",
+    "partialZero": true,
+    "qId": "15-2"
    }
   ]
  },
  {
   "id": 16,
   "pts": 1,
-  "title": "التمرين 16: أطقم ملابس العيد (المورد 4: توزيع الضرب على الجمع)",
-  "context": "اشترت أم من متجر بوهران <span class=\"math\">3</span> أطقم ملابس، كل طقم فيه سروال بـ <span class=\"math\">1250 DA</span> وقميص بـ <span class=\"math\">750 DA</span>.",
+  "title": "التمرين 16: جداء كسرين (المورد 6: جداء كسرين)",
+  "context": "احسب واكتب النتيجة على شكل كسر غير قابل للاختزال.",
   "questions": [
    {
-    "text": "ما المبلغ الذي دفعته الأم؟",
+    "text": "1) <span class=\"math\">2/3 × 4/5</span>",
     "exact": [
-     "6000"
+     "8/15"
     ],
     "partial": [
-     "4500",
-     "2000"
+     "6/8",
+     "10/12",
+     "22/15"
     ],
-    "h1": "المبلغ = عدد الأطقم × ثمن الطقم الواحد.",
-    "h2": "ثمن الطقم <span class=\"math\">1250 + 750</span>، أي السلسلة <span class=\"math\">3 × (1250 + 750)</span>.",
+    "h1": "جداء كسرين: نضرب البسطين معا والمقامين معا.",
+    "h2": "<span class=\"math\">(2 × 4)/(3 × 5)</span>.",
     "steps": [
-     "<span class=\"math\">3 × (1250 + 750)</span>",
-     "<span class=\"math\">= 3 × 2000</span>",
-     "<span class=\"math\">= 6000</span>",
-     "أو بالتوزيع: <span class=\"math\">3 × 1250 + 3 × 750 = 3750 + 2250 = 6000</span>",
-     "النتيجة: <span class=\"math\">6000 DA</span>"
+     "<span class=\"math\">2/3 × 4/5</span>",
+     "<span class=\"math\">= (2 × 4)/(3 × 5)</span>",
+     "<span class=\"math\">= 8/15</span>",
+     "النتيجة: <span class=\"math\">8/15</span>"
     ],
     "rubric": [
      {
-      "step": "كتابة <span class=\"math\">3 × (1250 + 750)</span>",
+      "step": "ضرب البسطين والمقامين",
       "mark": "0,25"
      },
      {
-      "step": "ثمن الطقم <span class=\"math\">2000 DA</span>",
-      "mark": "0,25"
-     },
-     {
-      "step": "<span class=\"math\">3 × 2000</span>",
-      "mark": "0,25"
-     },
-     {
-      "step": "النتيجة <span class=\"math\">6000 DA</span>",
+      "step": "النتيجة <span class=\"math\">8/15</span>",
       "mark": "0,25"
      }
     ],
-    "pts": 1,
-    "partialMsg": "اضرب <span class=\"math\">3</span> في ثمن الطقم كاملا (السروال والقميص).",
+    "pts": 0.5,
+    "partialMsg": "في الضرب نضرب البسط في البسط والمقام في المقام.",
     "partialZero": true,
     "qId": "16-1"
+   },
+   {
+    "text": "2) <span class=\"math\">3/4 × 8/9</span>",
+    "exact": [
+     "2/3"
+    ],
+    "partial": [
+     "24/36",
+     "12/18",
+     "6/9",
+     "8/12",
+     "4/6"
+    ],
+    "h1": "اضرب البسطين والمقامين ثم اختزل.",
+    "h2": "<span class=\"math\">24/36</span>: قسّم البسط والمقام على <span class=\"math\">12</span>.",
+    "steps": [
+     "<span class=\"math\">3/4 × 8/9</span>",
+     "<span class=\"math\">= (3 × 8)/(4 × 9)</span>",
+     "<span class=\"math\">= 24/36</span>",
+     "<span class=\"math\">24 ÷ 12</span>",
+     "<span class=\"math\">= 2</span> و<span class=\"math\">36 ÷ 12 = 3</span>",
+     "<span class=\"math\">= 2/3</span>",
+     "النتيجة: <span class=\"math\">2/3</span>"
+    ],
+    "rubric": [
+     {
+      "step": "<span class=\"math\">24/36</span>",
+      "mark": "0,25"
+     },
+     {
+      "step": "الاختزال <span class=\"math\">2/3</span>",
+      "mark": "0,25"
+     }
+    ],
+    "pts": 0.5,
+    "partialMsg": "النتيجة صحيحة لكن اختزل الكسر إلى أبسط شكل.",
+    "qId": "16-2"
    }
   ]
  },
  {
   "id": 17,
   "pts": 1,
-  "title": "التمرين 17: التوزيع على الطرح ذهنيا (المورد 5: توزيع الضرب على الطرح)",
-  "context": "احسب ذهنيا باستعمال توزيع الضرب على الطرح.",
+  "title": "التمرين 17: حديقة الخضر (المورد 6: جداء كسرين)",
+  "context": "خصص فلاح من البليدة <span class=\"math\">3/5</span> مساحة أرضه للخضر، وزرع الطماطم في <span class=\"math\">2/3</span> مساحة الخضر.",
   "questions": [
    {
-    "text": "1) <span class=\"math\">9 × 98</span> (اكتب <span class=\"math\">98 = 100 − 2</span>)",
+    "text": "1) ما الكسر الذي يمثل مساحة الطماطم من كل الأرض؟ (كسر غير قابل للاختزال)",
     "exact": [
-     "882"
+     "2/5"
     ],
-    "partial": [],
-    "h1": "خاصية التوزيع: <span class=\"math\">k × (a − b) = k × a − k × b</span>.",
-    "h2": "<span class=\"math\">9 × 100 − 9 × 2</span>.",
+    "partial": [
+     "6/15"
+    ],
+    "h1": "«<span class=\"math\">2/3</span> من <span class=\"math\">3/5</span>» تعني <span class=\"math\">2/3 × 3/5</span>.",
+    "h2": "احسب <span class=\"math\">6/15</span> ثم اختزل على <span class=\"math\">3</span>.",
     "steps": [
-     "<span class=\"math\">9 × 98 = 9 × (100 − 2)</span>",
-     "<span class=\"math\">= 9 × 100 − 9 × 2</span>",
-     "<span class=\"math\">= 900 − 18</span>",
-     "<span class=\"math\">= 882</span>",
-     "النتيجة: <span class=\"math\">882</span>"
+     "<span class=\"math\">2/3 × 3/5</span>",
+     "<span class=\"math\">= (2 × 3)/(3 × 5)</span>",
+     "<span class=\"math\">= 6/15</span>",
+     "<span class=\"math\">= 2/5</span>",
+     "النتيجة: <span class=\"math\">2/5</span>"
     ],
     "rubric": [
      {
-      "step": "<span class=\"math\">9 × 100 − 9 × 2</span>",
+      "step": "الجداء <span class=\"math\">2/3 × 3/5</span>",
       "mark": "0,25"
      },
      {
-      "step": "النتيجة <span class=\"math\">882</span>",
+      "step": "النتيجة <span class=\"math\">2/5</span>",
       "mark": "0,25"
      }
     ],
     "pts": 0.5,
+    "partialMsg": "النتيجة صحيحة لكن اختزل الكسر إلى أبسط شكل.",
     "qId": "17-1"
    },
    {
-    "text": "2) <span class=\"math\">15 × 19</span> (اكتب <span class=\"math\">19 = 20 − 1</span>)",
+    "text": "2) مساحة الأرض <span class=\"math\">1500 m²</span>. ما مساحة الطماطم؟",
     "exact": [
-     "285"
+     "600"
     ],
-    "partial": [],
-    "h1": "خاصية التوزيع: <span class=\"math\">k × (a − b) = k × a − k × b</span>.",
-    "h2": "<span class=\"math\">15 × 20 − 15 × 1</span>.",
+    "partial": [
+     "900",
+     "1000"
+    ],
+    "h1": "مساحة الطماطم = <span class=\"math\">2/5</span> من <span class=\"math\">1500</span>.",
+    "h2": "<span class=\"math\">1500 ÷ 5 = 300</span> ثم اضرب في <span class=\"math\">2</span>.",
     "steps": [
-     "<span class=\"math\">15 × 19 = 15 × (20 − 1)</span>",
-     "<span class=\"math\">= 15 × 20 − 15 × 1</span>",
-     "<span class=\"math\">= 300 − 15</span>",
-     "<span class=\"math\">= 285</span>",
-     "النتيجة: <span class=\"math\">285</span>"
+     "<span class=\"math\">2/5 × 1500</span>",
+     "<span class=\"math\">1500 ÷ 5 = 300</span>",
+     "<span class=\"math\">300 × 2 = 600</span>",
+     "النتيجة: <span class=\"math\">600 m²</span>"
     ],
     "rubric": [
      {
-      "step": "<span class=\"math\">15 × 20 − 15 × 1</span>",
+      "step": "العملية <span class=\"math\">2/5 × 1500</span>",
       "mark": "0,25"
      },
      {
-      "step": "النتيجة <span class=\"math\">285</span>",
+      "step": "النتيجة <span class=\"math\">600 m²</span>",
       "mark": "0,25"
      }
     ],
     "pts": 0.5,
+    "partialMsg": "استعمل الكسر <span class=\"math\">2/5</span> الذي وجدته في السؤال الأول.",
+    "partialZero": true,
     "qId": "17-2"
    }
   ]
@@ -1686,71 +1764,72 @@
  {
   "id": 18,
   "pts": 1,
-  "title": "التمرين 18: نشر عبارات فيها طرح (المورد 5: توزيع الضرب على الطرح)",
-  "context": "انشر كل عبارة.",
+  "title": "التمرين 18: مقارنة كسرين (المورد 7: مقارنة كسرين وجمعهما وطرحهما (مقام أحدهما مضاعف للآخر))",
+  "context": "لمقارنة كسرين نوحد مقاميهما.",
   "questions": [
    {
-    "text": "1) <span class=\"math\">5(x − 3)</span>",
+    "text": "1) أي الكسرين أكبر: <span class=\"math\">5/6</span> أم <span class=\"math\">7/12</span>؟ (اكتب الكسر الأكبر)",
     "exact": [
-     "5x-15",
-     "-15+5x"
+     "5/6"
     ],
     "partial": [
-     "5x-3",
-     "5x+15"
+     "7/12",
+     "10/12"
     ],
-    "h1": "اضرب <span class=\"math\">5</span> في كل حد واحتفظ بعلامة الطرح.",
-    "h2": "<span class=\"math\">5 × x − 5 × 3</span>.",
+    "h1": "<span class=\"math\">12</span> مضاعف لـ <span class=\"math\">6</span>: اكتب <span class=\"math\">5/6</span> بالمقام <span class=\"math\">12</span>.",
+    "h2": "<span class=\"math\">5/6 = 10/12</span>؛ قارن <span class=\"math\">10/12</span> و<span class=\"math\">7/12</span>.",
     "steps": [
-     "<span class=\"math\">5(x − 3) = 5 × x − 5 × 3</span>",
-     "<span class=\"math\">= 5x − 15</span>",
-     "النتيجة: <span class=\"math\">5x − 15</span>"
+     "<span class=\"math\">5/6</span>",
+     "<span class=\"math\">= (5 × 2)/(6 × 2) = 10/12</span>",
+     "<span class=\"math\">10/12 &gt; 7/12</span>",
+     "<span class=\"math\">5/6 &gt; 7/12</span>",
+     "النتيجة: <span class=\"math\">5/6</span>"
     ],
     "rubric": [
      {
-      "step": "<span class=\"math\">5 × x − 5 × 3</span>",
+      "step": "توحيد المقامين <span class=\"math\">10/12</span>",
       "mark": "0,25"
      },
      {
-      "step": "النتيجة <span class=\"math\">5x − 15</span>",
+      "step": "النتيجة <span class=\"math\">5/6</span>",
       "mark": "0,25"
      }
     ],
     "pts": 0.5,
-    "partialMsg": "اضرب <span class=\"math\">5</span> في كل حد واحتفظ بعلامة الطرح.",
+    "partialMsg": "وحّد المقامين ثم قارن البسطين، واكتب الكسر كما ورد في السؤال.",
     "partialZero": true,
     "qId": "18-1"
    },
    {
-    "text": "2) <span class=\"math\">4(3 − 2y)</span>",
+    "text": "2) أي الكسرين أصغر: <span class=\"math\">3/4</span> أم <span class=\"math\">13/16</span>؟ (اكتب الكسر الأصغر)",
     "exact": [
-     "12-8y",
-     "-8y+12"
+     "3/4"
     ],
     "partial": [
-     "12-2y",
-     "3-8y",
-     "4y"
+     "13/16",
+     "12/16"
     ],
-    "h1": "اضرب <span class=\"math\">4</span> في <span class=\"math\">3</span> ثم في <span class=\"math\">2y</span>.",
-    "h2": "<span class=\"math\">4 × 2y = 8y</span>.",
+    "h1": "<span class=\"math\">16</span> مضاعف لـ <span class=\"math\">4</span>.",
+    "h2": "<span class=\"math\">3/4 = 12/16</span>؛ قارن <span class=\"math\">12/16</span> و<span class=\"math\">13/16</span>.",
     "steps": [
-     "<span class=\"math\">4(3 − 2y) = 4 × 3 − 4 × 2y</span>",
-     "<span class=\"math\">= 12 − 8y</span>",
-     "النتيجة: <span class=\"math\">12 − 8y</span>"
+     "<span class=\"math\">3/4</span>",
+     "<span class=\"math\">= (3 × 4)/(4 × 4) = 12/16</span>",
+     "<span class=\"math\">12/16 &lt; 13/16</span>",
+     "<span class=\"math\">3/4 &lt; 13/16</span>",
+     "النتيجة: <span class=\"math\">3/4</span>"
     ],
     "rubric": [
      {
-      "step": "<span class=\"math\">4 × 3 − 4 × 2y</span>",
+      "step": "توحيد المقامين <span class=\"math\">12/16</span>",
       "mark": "0,25"
      },
      {
-      "step": "النتيجة <span class=\"math\">12 − 8y</span>",
+      "step": "النتيجة <span class=\"math\">3/4</span>",
       "mark": "0,25"
      }
     ],
     "pts": 0.5,
-    "partialMsg": "اضرب <span class=\"math\">4</span> في كل حد، ولا تجمع <span class=\"math\">12</span> مع <span class=\"math\">8y</span> لأنهما ليسا من نفس النوع.",
+    "partialMsg": "وحّد المقامين ثم قارن البسطين، واكتب الكسر كما ورد في السؤال.",
     "partialZero": true,
     "qId": "18-2"
    }
@@ -1759,61 +1838,69 @@
  {
   "id": 19,
   "pts": 1,
-  "title": "التمرين 19: العامل المشترك مع الطرح (المورد 5: توزيع الضرب على الطرح)",
-  "context": "احسب بطريقة سهلة: <span class=\"math\">k × a − k × b = k × (a − b)</span>.",
+  "title": "التمرين 19: جمع وطرح كسرين (المورد 7: مقارنة كسرين وجمعهما وطرحهما (مقام أحدهما مضاعف للآخر))",
+  "context": "احسب واكتب النتيجة على شكل كسر غير قابل للاختزال.",
   "questions": [
    {
-    "text": "1) <span class=\"math\">14 × 27 − 14 × 17</span>",
+    "text": "1) <span class=\"math\">2/5 + 3/10</span>",
     "exact": [
-     "140"
+     "7/10"
     ],
-    "partial": [],
-    "h1": "العامل المشترك هو <span class=\"math\">14</span>.",
-    "h2": "<span class=\"math\">14 × (27 − 17)</span>.",
+    "partial": [
+     "5/15",
+     "1/3"
+    ],
+    "h1": "وحّد المقامين: <span class=\"math\">10</span> مضاعف لـ <span class=\"math\">5</span>.",
+    "h2": "<span class=\"math\">2/5 = 4/10</span>؛ ثم اجمع البسطين.",
     "steps": [
-     "<span class=\"math\">14 × 27 − 14 × 17 = 14 × (27 − 17)</span>",
-     "<span class=\"math\">= 14 × 10</span>",
-     "<span class=\"math\">= 140</span>",
-     "النتيجة: <span class=\"math\">140</span>"
+     "<span class=\"math\">2/5 = 4/10</span>",
+     "<span class=\"math\">4/10 + 3/10 = (4 + 3)/10</span>",
+     "<span class=\"math\">= 7/10</span>",
+     "النتيجة: <span class=\"math\">7/10</span>"
     ],
     "rubric": [
      {
-      "step": "<span class=\"math\">14 × (27 − 17)</span>",
+      "step": "توحيد المقامين",
       "mark": "0,25"
      },
      {
-      "step": "النتيجة <span class=\"math\">140</span>",
+      "step": "النتيجة <span class=\"math\">7/10</span>",
       "mark": "0,25"
      }
     ],
     "pts": 0.5,
+    "partialMsg": "لا نجمع المقامات: نوحدها ثم نجمع البسطين فقط.",
+    "partialZero": true,
     "qId": "19-1"
    },
    {
-    "text": "2) <span class=\"math\">6,5 × 13 − 6,5 × 3</span>",
+    "text": "2) <span class=\"math\">5/6 − 1/3</span>",
     "exact": [
-     "65"
+     "1/2"
     ],
-    "partial": [],
-    "h1": "العامل المشترك هو <span class=\"math\">6,5</span>.",
-    "h2": "<span class=\"math\">6,5 × (13 − 3)</span>.",
+    "partial": [
+     "3/6"
+    ],
+    "h1": "وحّد المقامين: <span class=\"math\">6</span> مضاعف لـ <span class=\"math\">3</span>.",
+    "h2": "<span class=\"math\">1/3 = 2/6</span>؛ اطرح ثم اختزل <span class=\"math\">3/6</span>.",
     "steps": [
-     "<span class=\"math\">6,5 × 13 − 6,5 × 3 = 6,5 × (13 − 3)</span>",
-     "<span class=\"math\">= 6,5 × 10</span>",
-     "<span class=\"math\">= 65</span>",
-     "النتيجة: <span class=\"math\">65</span>"
+     "<span class=\"math\">1/3 = 2/6</span>",
+     "<span class=\"math\">5/6 − 2/6 = 3/6</span>",
+     "<span class=\"math\">3/6 = 1/2</span>",
+     "النتيجة: <span class=\"math\">1/2</span>"
     ],
     "rubric": [
      {
-      "step": "<span class=\"math\">6,5 × (13 − 3)</span>",
+      "step": "توحيد المقامين والطرح <span class=\"math\">3/6</span>",
       "mark": "0,25"
      },
      {
-      "step": "النتيجة <span class=\"math\">65</span>",
+      "step": "الاختزال <span class=\"math\">1/2</span>",
       "mark": "0,25"
      }
     ],
     "pts": 0.5,
+    "partialMsg": "النتيجة صحيحة لكن اختزل الكسر إلى أبسط شكل.",
     "qId": "19-2"
    }
   ]
@@ -1821,66 +1908,70 @@
  {
   "id": 20,
   "pts": 1,
-  "title": "التمرين 20: تخفيض في متجر رياضي (المورد 5: توزيع الضرب على الطرح)",
-  "context": "في متجر بعنابة ثمن الحذاء الرياضي <span class=\"math\">3200 DA</span>، وعليه تخفيض <span class=\"math\">400 DA</span>. اشترى نادٍ رياضي <span class=\"math\">15</span> حذاء.",
+  "title": "التمرين 20: خزان الماء (المورد 7: مقارنة كسرين وجمعهما وطرحهما (مقام أحدهما مضاعف للآخر))",
+  "context": "كان خزان ماء ببيت في الجلفة مملوءا إلى <span class=\"math\">7/8</span> سعته، فاستُهلك منه ما يعادل <span class=\"math\">1/4</span> السعة.",
   "questions": [
    {
-    "text": "1) ما المبلغ الذي دفعه النادي؟",
+    "text": "1) ما الكسر الذي يمثل الماء المتبقي من سعة الخزان؟",
     "exact": [
-     "42000"
+     "5/8"
     ],
     "partial": [
-     "48000"
+     "6/4",
+     "3/2"
     ],
-    "h1": "ثمن الحذاء بعد التخفيض <span class=\"math\">3200 − 400</span>، ثم اضرب في <span class=\"math\">15</span>.",
-    "h2": "السلسلة: <span class=\"math\">15 × (3200 − 400)</span>.",
+    "h1": "المتبقي = <span class=\"math\">7/8 − 1/4</span>.",
+    "h2": "<span class=\"math\">1/4 = 2/8</span>.",
     "steps": [
-     "<span class=\"math\">15 × (3200 − 400)</span>",
-     "<span class=\"math\">= 15 × 2800</span>",
-     "<span class=\"math\">= 42000</span>",
-     "أو: <span class=\"math\">15 × 3200 − 15 × 400 = 48000 − 6000 = 42000</span>",
-     "النتيجة: <span class=\"math\">42000 DA</span>"
+     "<span class=\"math\">1/4 = 2/8</span>",
+     "<span class=\"math\">7/8 − 2/8 = 5/8</span>",
+     "النتيجة: <span class=\"math\">5/8</span>"
     ],
     "rubric": [
      {
-      "step": "كتابة <span class=\"math\">15 × (3200 − 400)</span>",
+      "step": "توحيد المقامين <span class=\"math\">2/8</span>",
       "mark": "0,25"
      },
      {
-      "step": "النتيجة <span class=\"math\">42000 DA</span>",
+      "step": "النتيجة <span class=\"math\">5/8</span>",
       "mark": "0,25"
      }
     ],
     "pts": 0.5,
-    "partialMsg": "هذا الثمن دون تخفيض.",
+    "partialMsg": "لا نطرح المقامات: نوحدها ثم نطرح البسطين.",
     "partialZero": true,
     "qId": "20-1"
    },
    {
-    "text": "2) ما قيمة التخفيض الذي استفاد منه النادي في المجموع؟",
+    "text": "2) سعة الخزان <span class=\"math\">2000 L</span>. كم لترا بقي فيه؟",
     "exact": [
-     "6000"
+     "1250"
     ],
-    "partial": [],
-    "h1": "التخفيض الكلي = عدد الأحذية × تخفيض الحذاء الواحد.",
-    "h2": "<span class=\"math\">15 × 400</span>.",
+    "partial": [
+     "1750",
+     "500"
+    ],
+    "h1": "الماء المتبقي = <span class=\"math\">5/8</span> من <span class=\"math\">2000</span>.",
+    "h2": "<span class=\"math\">2000 ÷ 8 = 250</span> ثم اضرب في <span class=\"math\">5</span>.",
     "steps": [
-     "<span class=\"math\">15 × 400</span>",
-     "<span class=\"math\">= 6000</span>",
-     "نتحقق: <span class=\"math\">48000 − 42000 = 6000</span>",
-     "النتيجة: <span class=\"math\">6000 DA</span>"
+     "<span class=\"math\">5/8 × 2000</span>",
+     "<span class=\"math\">2000 ÷ 8 = 250</span>",
+     "<span class=\"math\">250 × 5 = 1250</span>",
+     "النتيجة: <span class=\"math\">1250 L</span>"
     ],
     "rubric": [
      {
-      "step": "<span class=\"math\">15 × 400</span>",
+      "step": "العملية <span class=\"math\">5/8 × 2000</span>",
       "mark": "0,25"
      },
      {
-      "step": "النتيجة <span class=\"math\">6000 DA</span>",
+      "step": "النتيجة <span class=\"math\">1250 L</span>",
       "mark": "0,25"
      }
     ],
     "pts": 0.5,
+    "partialMsg": "استعمل الكسر المتبقي <span class=\"math\">5/8</span>.",
+    "partialZero": true,
     "qId": "20-2"
    }
   ]
@@ -1982,8 +2073,8 @@
             s = s.replace(/^[a-zA-Z]\s*=/i, '');
             s = s.replace(/،/g, ',').replace(/\./g, ',');
             s = s.replace(/\*/g, '×').replace(/(\d)[xX](?=\d)/g, '$1×').replace(/[−–]/g, '-');
-            s = s.replace(/(da|دج|دينار|أوراق|ورقة|عشرة|عشرات|وحدة|متر|درجة|°c|c°|°|cm²|m²|m2|cm|m|kg)$/i, '');
-            s = s.replace(/^\((.*)\)$/, '$1').replace(/^\+(?=\d)/, '');
+            s = s.replace(/(da|دج|دينار|أوراق|ورقة|عشرة|عشرات|وحدة|متر|درجة|°c|c°|°|cm²|m²|m2|cm|m|kg|لتر|l)$/i, '');
+            s = s.replace(/-\((\d+\/\d+)\)/g, '-$1').replace(/\((-?\d+(?:,\d+)?)\)/g, '$1').replace(/^\((.*)\)$/, '$1').replace(/^\+(?=\d)/, '');
             s = s.replace(/(\d),(\d*?)0+(?=$|[^\d])/g, (m, a, b) => b ? a + ',' + b : a);
             return s.toLowerCase();
         }
